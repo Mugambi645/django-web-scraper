@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from django.shortcuts import render
 
 
-def home(request):
+def index(request):
     url = "https://www.imdb.com/chart/moviemeter/"
     response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
